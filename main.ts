@@ -20,3 +20,19 @@ radio.onReceivedValue(function (name, value) {
     }
 })
 radio.setGroup(69)
+basic.forever(function () {
+    if (maqueen.Ultrasonic() < 10) {
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+        basic.pause(100)
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+        basic.pause(100)
+    }
+})
+basic.forever(function () {
+    if (maqueen.Ultrasonic() < 10) {
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
+        basic.pause(100)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+        basic.pause(100)
+    }
+})
