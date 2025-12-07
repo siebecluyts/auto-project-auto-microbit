@@ -20,5 +20,6 @@ To edit this repository in MakeCode.
 
 #### Metadata (used for search, rendering)
 
+this is the code for the remote control car i am making with a DFRobot maqueen v4.1 and Joystickbit v2. the car uses the maqueen and the controller the joystickbit. This is the code for the car. the code for the controller is on https://github.com/siebecluyts/auto-project-controller-microbit
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
