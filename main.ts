@@ -21,8 +21,8 @@ radio.onReceivedValue(function (name, value) {
 })
 radio.setGroup(69)
 basic.forever(function () {
-    if (maqueen.Ultrasonic() < 10) {
-        music.play(music.tonePlayable(698, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    if (maqueen.Ultrasonic() < 5) {
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
         maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
         basic.pause(100)
         maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
